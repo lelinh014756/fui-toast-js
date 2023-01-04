@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUI Toast Js</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/fuiToast.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen overflow-hidden bg-[#FFF8E4]">
+    <div id="toast"></div>
+    <div class="flex flex-col justify-center h-full items-center relative">
+      <div>
+        <img
+          src="./assets/images/rocket.png"
+          class="h-[200px] select-none"
+          alt="fui toast"
+        />
+      </div>
+      <h1 class="text-4xl font-bold text-[#482307]">FUI Toast Javascript</h1>
+      <p class="text-[#a1724e] text-xl md:text-2xl font-bold mt-2 capitalize">
+        The Best notification messages
+      </p>
+      <div class="text-[#a1724e] my-2 font-medium">Version v1.0.0</div>
+
+      <div
+        class="grid md:grid-cols-3 gap-4 rounded-2xl bg-[#F0E5D1] p-4 w-full max-w-lg mt-12"
+      >
+        <div
+          class="btn-toast cursor-pointer py-4 px-6 rounded-lg font-bold text-center bg-gradient-to-b from-white to-[#f8eedb] text-[#482307] shadow-md min-w-[150px] flex items-center gap-x-3 justify-center"
+        >
+          <svg
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            class="h-4"
+          >
+            <path
+              d="M352 0H288V51.2C215 66 160 130.6 160 208v88L96 368v48H544V368l-64-72V208c0-77.4-55-142-128-156.8V0zm32 448H320 256c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3zM0 176v48H24h80 24V176H104 24 0zm536 0H512v48h24 80 24V176H616 536zM608.2 50.7L586.7 7.8 565.3 18.5l-64 32L479.8 61.3l21.5 42.9 21.5-10.7 64-32 21.5-10.7zM53.3 61.5l64 32 21.5 10.7 21.5-42.9L138.7 50.5l-64-32L53.3 7.8 31.8 50.7 53.3 61.5z"
+            />
+          </svg>
+          Try
+        </div>
+        <a
+          href="https://freeui.vercel.app/fui-toast-javascript/"
+          target="_blank"
+          class="py-4 px-6 rounded-lg font-bold text-center bg-gradient-to-b from-white to-[#f8eedb] text-[#482307] shadow-md min-w-[150px] flex items-center gap-x-3 justify-center"
+        >
+          <svg
+            fill="currentColor"
+            class="h-4"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <defs>
+              <style>
+                .fa-secondary {
+                  opacity: 0.4;
+                }
+              </style>
+            </defs>
+            <path
+              class="fa-primary"
+              d="M192 0v512H128c-35.35 0-64-28.65-64-64v-40H24C10.75 408 0 397.3 0 384c0-13.26 10.75-24 24-24H64v-80H24C10.75 280 0 269.3 0 256c0-13.26 10.75-24 24-24H64v-80H24C10.75 152 0 141.3 0 128c0-13.26 10.75-24 24-24H64V64c0-35.35 28.65-64 64-64H192z"
+            />
+            <path
+              class="fa-secondary"
+              d="M416 0H192v512h224c35.35 0 64-28.65 64-64V64C480 28.65 451.3 0 416 0z"
+            />
+          </svg>
+          Docs
+        </a>
+        <a
+          href="#"
+          class="py-4 px-6 rounded-lg font-bold text-center bg-gradient-to-b from-white to-[#f8eedb] text-[#482307] shadow-md min-w-[150px] flex items-center gap-x-3 justify-center"
+        >
+          <svg
+            fill="currentColor"
+            class="h-5"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512"
+          >
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            />
+          </svg>
+          Github
+        </a>
+      </div>
+    </div>
+  </body>
+  <script src="/assets/js/fuiToast.min.js"></script>
+  <script>
+    FuiToast.configs({
+      icon: `😍`,
+    });
+    document
+      .querySelector(".btn-toast")
+      .addEventListener("click", () => FuiToast("Fui Basic toasted!", { isClose: true }));
+  </script>
+</html>
